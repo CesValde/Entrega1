@@ -1,7 +1,7 @@
 Entrega 1
 Implementar en el proyecto ecommerce facilitado al inicio del curso un CRUD de usuarios, junto con un sistema de Autenticación y Autorización.
 
-1. Modelo de Usuario: ✅
+1. Modelo de Usuario: 
    Crear un modelo User que contenga los siguientes campos:
    first_name: String
 
@@ -17,27 +17,27 @@ cart: Id con referencia a Carts
 
 role: String (valor por defecto: 'user')
 
-2. Encriptación de Contraseña: ✅
+2. Encriptación de Contraseña: 
    Utilizar el paquete bcrypt para encriptar la contraseña del usuario mediante el método hashSync.
 
 3. Estrategias de Passport:
    Desarrollar las estrategias de Passport para que funcionen con el modelo de usuarios creado.
 
-4. Sistema de Login: ✅
+4. Sistema de Login: 
    Implementar un sistema de login del usuario que trabaje con JWT (JSON Web Tokens).
 
-5. Ruta de Validación:✅
+5. Ruta de Validación:
    Agregar al router /api/sessions/ la ruta /current, que validará al usuario logueado y devolverá en una respuesta sus datos asociados al JWT.
 
 **Criterios:**
 
--  Modelo de Usuario y Encriptación de Contraseña: ✅
+-  Modelo de Usuario y Encriptación de Contraseña: 
 
-- Crear modelo User con los campos especificados y se ha implementado la encriptación de la contraseña utilizando bcrypt.hashSync. ✅
+- Crear modelo User con los campos especificados y se ha implementado la encriptación de la contraseña utilizando bcrypt.hashSync. 
 
-- Que el modelo User incluya todos los campos requeridos. ✅
+- Que el modelo User incluya todos los campos requeridos. 
 
-- Que la contraseña se encripte correctamente y se almacene en la base de datos de forma segura. ✅
+- Que la contraseña se encripte correctamente y se almacene en la base de datos de forma segura. 
 
 - Estrategias de Passport para Autorización y Autenticación:
 
@@ -47,19 +47,19 @@ role: String (valor por defecto: 'user')
 
 - Que se haya implementado una estrategia para la autenticación del usuario mediante JWT. 
 
-- Sistema de Login y Generación de Token JWT: ✅
+- Sistema de Login y Generación de Token JWT:
 
-- Que el sistema de login permita a los usuarios autenticarse y generar un token JWT válido. ✅
+- Que el sistema de login permita a los usuarios autenticarse y generar un token JWT válido.
 
-- Que los usuarios pueden iniciar sesión de manera exitosa y se les asigna un token JWT. ✅
+- Que los usuarios pueden iniciar sesión de manera exitosa y se les asigna un token JWT.
 
-- Que el token JWT sea válido y pueda utilizarse para realizar acciones protegidas en la aplicación. ✅
+- Que el token JWT sea válido y pueda utilizarse para realizar acciones protegidas en la aplicación.
 
 **Estrategia "Current" y Endpoint /api/sessions/current:**
 
-- Que se implemente una estrategia "current" que valide al usuario logueado y extraiga sus datos mediante el endpoint /api/sessions/current. ✅
+- Que se implemente una estrategia "current" que valide al usuario logueado y extraiga sus datos mediante el endpoint /api/sessions/current.
 
-- Que la estrategia "current" permita extraer el usuario asociado al token JWT de manera efectiva. ✅
+- Que la estrategia "current" permita extraer el usuario asociado al token JWT de manera efectiva.
 
 - Que en caso de token inválido o inexistente, se devuelva un error apropiado de Passport.
 
